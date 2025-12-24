@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ford Mustang | Official</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background-color: #000;
+        }
+
+        nav h1 {
+            color: #e10600;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e10600;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 90vh;
+            background: linear-gradient(
+                rgba(0,0,0,0.6),
+                rgba(0,0,0,0.6)
+            ),
+            url("https://images.unsplash.com/photo-1617814076367-b759c7d7e738") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            padding-left: 80px;
+        }
+
+        .hero-content h2 {
+            font-size: 55px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            max-width: 500px;
+            margin-bottom: 30px;
+            color: #dddddd;
+        }
+
+        .hero-content button {
+            padding: 15px 30px;
+            background-color: #e10600;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero-content button:hover {
+            background-color: #ff2a2a;
+        }
+
+        /* FEATURES */
+        .features {
+            padding: 80px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .feature-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #e10600;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #cccccc;
+        }
+
+        /* GALLERY */
+        .gallery {
+            padding: 60px;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 40px;
+        }
+
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .images img {
+            width: 100%;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            color: #aaaaaa;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+    <h1>MUSTANG</h1>
+    <ul>
+        <li><a href="https://www.ford.com/" target="_blank">Home</a></li>
+        <li><a href="https://www.ford.com/cars/mustang/models/" target="_blank">Models</a></li>
+        <li><a href="https://www.ford.com/cars/mustang/features/performance/" target="_blank">Performance</a></li>
+        <li><a href="https://www.ford.com/cars/mustang/gallery/" target="_blank">Gallery</a></li>
+        <li><a href="https://www.ford.com/help/contact/" target="_blank">Contact</a></li>
+    </ul>
+</nav>
+
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Ford Mustang</h2>
+            <p>
+                Experience raw power, legendary performance,
+                and iconic American muscle engineered for thrill.
+            </p>
+            <button>Explore Now</button>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <h2>Why Mustang?</h2>
+        <div class="feature-box">
+            <div class="card">
+                <h3>Power Engine</h3>
+                <p>5.0L V8 engine delivering heart-racing performance.</p>
+            </div>
+            <div class="card">
+                <h3>Aggressive Design</h3>
+                <p>Iconic grille, sharp lines, and aerodynamic body.</p>
+            </div>
+            <div class="card">
+                <h3>Advanced Tech</h3>
+                <p>Digital cockpit, drive modes, and smart connectivity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="images">
+            <img src="https://www.spinny.com/blog/wp-content/uploads/2024/07/Ford-Mustang-Dark-Horse-jpg.webp" alt="Mustang Front">
+            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a" alt="Mustang Side">
+            <img src="https://i.ytimg.com/vi/5oFP0YgSoDM/sddefault.jpg" alt="Mustang Rear">
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Ford Mustang 
+    </footer>
+
+</body>
+</html>
